@@ -1,0 +1,202 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', Courier, monospace;
+  color: #333;
+ }
+ 
+ 
+ /* Main page layout */
+ .main-page {
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ }
+ 
+ 
+ /* Header styling */
+ h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+ }
+ 
+ 
+ /* Input styling */
+ input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+ }
+ 
+ 
+ /* Button styling */
+ button {
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 10px;
+ }
+ 
+ 
+ button:hover {
+  background: #45a049;
+ }
+ 
+ 
+ /* Center the news source title */
+ .centered-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+ }
+ 
+ 
+ /* Dropdown container for side-by-side alignment */
+ .dropdown-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+ }
+ 
+ 
+ /* Dropdown styling for each dropdown */
+ .dropdown, .dropdown-to-filter {
+  flex: 1; /* Makes each dropdown take up equal space */
+ }
+ 
+ 
+ /* Dropdown label styling */
+ .dropdown-label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #555;
+ }
+ 
+ 
+ /* Dropdown select styling */
+ select {
+  padding: 10px;
+  width: 100%; /* Full width of the container */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+ }
+ 
+ 
+ /* Placeholder style for the default dropdown option */
+ select:invalid {
+  color: #aaa;
+ }
+ 
+ 
+ /* News sources box */
+ .news-sources-box {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1200px;
+ }
+ 
+ 
+ /* List layout for news sources */
+ .news-source-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+ }
+ 
+ 
+ /* Card styling */
+ .card {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+ }
+ 
+ 
+ /* Hover effect for the card */
+ .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+ /* Card content styling */
+ .card h3 {
+  color: #444;
+  margin-bottom: 10px;
+ }
+ 
+ 
+ /* Source favicon styling */
+ .card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+ }
+ 
+ 
+ /* Description styling */
+ .card p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+ }
+ 
+ 
+ /* Remove button styling */
+ .card button {
+  background: #d9534f;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+ }
+ 
+ 
+ .card button:hover {
+  background: #c9302c;
+ }
+ 
+ 
+ /* Card entrance animation */
+ .card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+ }
+ 
+ 
+ /* Keyframes */
+ @keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ }
+ 
