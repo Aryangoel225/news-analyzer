@@ -19,7 +19,10 @@ const useFetchSources = (apiKey) => {
           const response = await fetch(url);
 
           // Handle non-OK responses (e.g., 404, 500 errors)
-          if (!response.ok) throw new Error("Failed to fetch sources");
+          if (!response.ok) {
+            const errorMessage = `Error: ${response.status} - ${response.statusText}`;
+            throw new Error(errorMessage);
+          }
 
           const data = await response.json();
 

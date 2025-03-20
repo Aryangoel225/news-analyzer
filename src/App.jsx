@@ -5,7 +5,8 @@ import './App.css';
 
 function App() {
   // fetch source infomation
-  const apiKey = "044705fc02de4106b088d198fe4de29c";
+  const apiKey = import.meta.env.VITE_API_KEY;
+  console.log("API Key:", apiKey);
   const { availableSources, loading, error, categories } = useFetchSources(apiKey);
 
   // method to track the news sources
